@@ -1288,6 +1288,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Actito-Go-Info.plist";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to scan for products.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to scan for products and reply to notifications.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We will need to make use of your location to present relevant information about offers around you.";
@@ -1295,6 +1296,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will need to make use of your location to present relevant information about offers around you.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We will need access to the device's microphone to reply to notifications.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We may need to access your photos to reply to notifications.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1331,6 +1333,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Actito-Go-Info.plist";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to scan for products.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to scan for products and reply to notifications.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We will need to make use of your location to present relevant information about offers around you.";
@@ -1338,6 +1341,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will need to make use of your location to present relevant information about offers around you.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We will need access to the device's microphone to reply to notifications.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We may need to access your photos to reply to notifications.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
