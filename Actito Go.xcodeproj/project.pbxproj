@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A42BF972EAA171F00172959 /* ActitoAssetsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BF962EAA171F00172959 /* ActitoAssetsKit */; };
-		1A42BF992EAA171F00172959 /* ActitoGeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BF982EAA171F00172959 /* ActitoGeoKit */; };
-		1A42BF9B2EAA171F00172959 /* ActitoInAppMessagingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BF9A2EAA171F00172959 /* ActitoInAppMessagingKit */; };
-		1A42BF9D2EAA171F00172959 /* ActitoInboxKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BF9C2EAA171F00172959 /* ActitoInboxKit */; };
-		1A42BF9F2EAA171F00172959 /* ActitoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BF9E2EAA171F00172959 /* ActitoKit */; };
-		1A42BFA12EAA171F00172959 /* ActitoLoyaltyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BFA02EAA171F00172959 /* ActitoLoyaltyKit */; };
-		1A42BFA32EAA171F00172959 /* ActitoNotificationServiceExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BFA22EAA171F00172959 /* ActitoNotificationServiceExtensionKit */; };
-		1A42BFA52EAA171F00172959 /* ActitoPushKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BFA42EAA171F00172959 /* ActitoPushKit */; };
-		1A42BFA72EAA171F00172959 /* ActitoPushUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BFA62EAA171F00172959 /* ActitoPushUIKit */; };
 		1A42BFAE2EAA814D00172959 /* AppIconDev.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1A42BFAD2EAA814D00172959 /* AppIconDev.icon */; };
 		1A42BFB02EAA853B00172959 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BFAF2EAA853B00172959 /* FirebaseAnalyticsCore */; };
+		1ADE5CCA2EB37CBB001B774D /* ActitoAssetsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CC92EB37CBB001B774D /* ActitoAssetsKit */; };
+		1ADE5CCC2EB37CBB001B774D /* ActitoGeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CCB2EB37CBB001B774D /* ActitoGeoKit */; };
+		1ADE5CCE2EB37CBB001B774D /* ActitoInAppMessagingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CCD2EB37CBB001B774D /* ActitoInAppMessagingKit */; };
+		1ADE5CD02EB37CBB001B774D /* ActitoInboxKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CCF2EB37CBB001B774D /* ActitoInboxKit */; };
+		1ADE5CD22EB37CBB001B774D /* ActitoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD12EB37CBB001B774D /* ActitoKit */; };
+		1ADE5CD42EB37CBB001B774D /* ActitoLoyaltyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD32EB37CBB001B774D /* ActitoLoyaltyKit */; };
+		1ADE5CD62EB37CBB001B774D /* ActitoNotificationServiceExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD52EB37CBB001B774D /* ActitoNotificationServiceExtensionKit */; };
+		1ADE5CD82EB37CBB001B774D /* ActitoPushKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD72EB37CBB001B774D /* ActitoPushKit */; };
+		1ADE5CDA2EB37CBB001B774D /* ActitoPushUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD92EB37CBB001B774D /* ActitoPushUIKit */; };
 		E5A3442A2AE012E8002EE51B /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = E5A344292AE012E8002EE51B /* SwiftUIIntrospect */; };
 		F2018F6B27DB6D8D004908E7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2018F6A27DB6D8D004908E7 /* Product.swift */; };
 		F2018F6D27DF935F004908E7 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2018F6C27DF935F004908E7 /* ProductDetailsViewModel.swift */; };
@@ -285,21 +285,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A42BFA32EAA171F00172959 /* ActitoNotificationServiceExtensionKit in Frameworks */,
+				1ADE5CD62EB37CBB001B774D /* ActitoNotificationServiceExtensionKit in Frameworks */,
 				F2B984CF2851089D005CD6D6 /* FirebaseAuth in Frameworks */,
-				1A42BF992EAA171F00172959 /* ActitoGeoKit in Frameworks */,
-				1A42BF9D2EAA171F00172959 /* ActitoInboxKit in Frameworks */,
-				1A42BFA72EAA171F00172959 /* ActitoPushUIKit in Frameworks */,
+				1ADE5CCC2EB37CBB001B774D /* ActitoGeoKit in Frameworks */,
+				1ADE5CD02EB37CBB001B774D /* ActitoInboxKit in Frameworks */,
+				1ADE5CDA2EB37CBB001B774D /* ActitoPushUIKit in Frameworks */,
 				F24AA6E827ECC37B00F981DF /* CodeScanner in Frameworks */,
 				E5A3442A2AE012E8002EE51B /* SwiftUIIntrospect in Frameworks */,
-				1A42BFA12EAA171F00172959 /* ActitoLoyaltyKit in Frameworks */,
 				F24AA6EB27EDD20800F981DF /* Lottie in Frameworks */,
-				1A42BFA52EAA171F00172959 /* ActitoPushKit in Frameworks */,
-				1A42BF972EAA171F00172959 /* ActitoAssetsKit in Frameworks */,
-				1A42BF9B2EAA171F00172959 /* ActitoInAppMessagingKit in Frameworks */,
+				1ADE5CD42EB37CBB001B774D /* ActitoLoyaltyKit in Frameworks */,
 				F292850C28E5EF7A00B7264A /* WidgetKit.framework in Frameworks */,
+				1ADE5CD82EB37CBB001B774D /* ActitoPushKit in Frameworks */,
+				1ADE5CCA2EB37CBB001B774D /* ActitoAssetsKit in Frameworks */,
+				1ADE5CCE2EB37CBB001B774D /* ActitoInAppMessagingKit in Frameworks */,
 				1A42BFB02EAA853B00172959 /* FirebaseAnalyticsCore in Frameworks */,
-				1A42BF9F2EAA171F00172959 /* ActitoKit in Frameworks */,
+				1ADE5CD22EB37CBB001B774D /* ActitoKit in Frameworks */,
 				F24D0D8A27FC595A00E4232A /* Alamofire in Frameworks */,
 				F2B984D12851089D005CD6D6 /* FirebaseCrashlytics in Frameworks */,
 			);
@@ -779,16 +779,16 @@
 				F2B984CE2851089D005CD6D6 /* FirebaseAuth */,
 				F2B984D02851089D005CD6D6 /* FirebaseCrashlytics */,
 				E5A344292AE012E8002EE51B /* SwiftUIIntrospect */,
-				1A42BF962EAA171F00172959 /* ActitoAssetsKit */,
-				1A42BF982EAA171F00172959 /* ActitoGeoKit */,
-				1A42BF9A2EAA171F00172959 /* ActitoInAppMessagingKit */,
-				1A42BF9C2EAA171F00172959 /* ActitoInboxKit */,
-				1A42BF9E2EAA171F00172959 /* ActitoKit */,
-				1A42BFA02EAA171F00172959 /* ActitoLoyaltyKit */,
-				1A42BFA22EAA171F00172959 /* ActitoNotificationServiceExtensionKit */,
-				1A42BFA42EAA171F00172959 /* ActitoPushKit */,
-				1A42BFA62EAA171F00172959 /* ActitoPushUIKit */,
 				1A42BFAF2EAA853B00172959 /* FirebaseAnalyticsCore */,
+				1ADE5CC92EB37CBB001B774D /* ActitoAssetsKit */,
+				1ADE5CCB2EB37CBB001B774D /* ActitoGeoKit */,
+				1ADE5CCD2EB37CBB001B774D /* ActitoInAppMessagingKit */,
+				1ADE5CCF2EB37CBB001B774D /* ActitoInboxKit */,
+				1ADE5CD12EB37CBB001B774D /* ActitoKit */,
+				1ADE5CD32EB37CBB001B774D /* ActitoLoyaltyKit */,
+				1ADE5CD52EB37CBB001B774D /* ActitoNotificationServiceExtensionKit */,
+				1ADE5CD72EB37CBB001B774D /* ActitoPushKit */,
+				1ADE5CD92EB37CBB001B774D /* ActitoPushUIKit */,
 			);
 			productName = "Notificare Go";
 			productReference = F2F000FF27BFE83D00753D89 /* Actito Go.app */;
@@ -830,7 +830,7 @@
 				F24D0D8827FC595A00E4232A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F2B984CB2851089D005CD6D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				E5A344282AE012E8002EE51B /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */,
+				1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */,
 			);
 			productRefGroup = F2F0010027BFE83D00753D89 /* Products */;
 			projectDirPath = "";
@@ -1407,12 +1407,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */ = {
+		1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/actito/actito-sdk-ios-in-house-releases";
+			repositoryURL = "https://github.com/actito/actito-sdk-ios.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = "5.0.0-beta.1";
 			};
 		};
 		E5A344282AE012E8002EE51B /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
@@ -1459,55 +1459,55 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1A42BF962EAA171F00172959 /* ActitoAssetsKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoAssetsKit;
-		};
-		1A42BF982EAA171F00172959 /* ActitoGeoKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoGeoKit;
-		};
-		1A42BF9A2EAA171F00172959 /* ActitoInAppMessagingKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoInAppMessagingKit;
-		};
-		1A42BF9C2EAA171F00172959 /* ActitoInboxKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoInboxKit;
-		};
-		1A42BF9E2EAA171F00172959 /* ActitoKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoKit;
-		};
-		1A42BFA02EAA171F00172959 /* ActitoLoyaltyKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoLoyaltyKit;
-		};
-		1A42BFA22EAA171F00172959 /* ActitoNotificationServiceExtensionKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoNotificationServiceExtensionKit;
-		};
-		1A42BFA42EAA171F00172959 /* ActitoPushKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoPushKit;
-		};
-		1A42BFA62EAA171F00172959 /* ActitoPushUIKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A42BF952EAA171F00172959 /* XCRemoteSwiftPackageReference "actito-sdk-ios-in-house-releases" */;
-			productName = ActitoPushUIKit;
-		};
 		1A42BFAF2EAA853B00172959 /* FirebaseAnalyticsCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F2B984CB2851089D005CD6D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsCore;
+		};
+		1ADE5CC92EB37CBB001B774D /* ActitoAssetsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoAssetsKit;
+		};
+		1ADE5CCB2EB37CBB001B774D /* ActitoGeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoGeoKit;
+		};
+		1ADE5CCD2EB37CBB001B774D /* ActitoInAppMessagingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoInAppMessagingKit;
+		};
+		1ADE5CCF2EB37CBB001B774D /* ActitoInboxKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoInboxKit;
+		};
+		1ADE5CD12EB37CBB001B774D /* ActitoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoKit;
+		};
+		1ADE5CD32EB37CBB001B774D /* ActitoLoyaltyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoLoyaltyKit;
+		};
+		1ADE5CD52EB37CBB001B774D /* ActitoNotificationServiceExtensionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoNotificationServiceExtensionKit;
+		};
+		1ADE5CD72EB37CBB001B774D /* ActitoPushKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoPushKit;
+		};
+		1ADE5CD92EB37CBB001B774D /* ActitoPushUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoPushUIKit;
 		};
 		E5A344292AE012E8002EE51B /* SwiftUIIntrospect */ = {
 			isa = XCSwiftPackageProductDependency;
