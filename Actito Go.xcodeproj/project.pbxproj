@@ -18,6 +18,7 @@
 		1ADE5CD62EB37CBB001B774D /* ActitoNotificationServiceExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD52EB37CBB001B774D /* ActitoNotificationServiceExtensionKit */; };
 		1ADE5CD82EB37CBB001B774D /* ActitoPushKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD72EB37CBB001B774D /* ActitoPushKit */; };
 		1ADE5CDA2EB37CBB001B774D /* ActitoPushUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD92EB37CBB001B774D /* ActitoPushUIKit */; };
+		1ADE5CDC2EB4F7AB001B774D /* Bundle+URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE5CDB2EB4F79D001B774D /* Bundle+URLScheme.swift */; };
 		E5A3442A2AE012E8002EE51B /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = E5A344292AE012E8002EE51B /* SwiftUIIntrospect */; };
 		F2018F6B27DB6D8D004908E7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2018F6A27DB6D8D004908E7 /* Product.swift */; };
 		F2018F6D27DF935F004908E7 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2018F6C27DF935F004908E7 /* ProductDetailsViewModel.swift */; };
@@ -160,6 +161,7 @@
 		1A42BFA82EAA7C0300172959 /* Actito Go Icon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "Actito Go Icon.icon"; sourceTree = "<group>"; };
 		1A42BFAC2EAA7D7500172959 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		1A42BFAD2EAA814D00172959 /* AppIconDev.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIconDev.icon; sourceTree = "<group>"; };
+		1ADE5CDB2EB4F79D001B774D /* Bundle+URLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+URLScheme.swift"; sourceTree = "<group>"; };
 		F2018F6A27DB6D8D004908E7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F2018F6C27DF935F004908E7 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		F2018F6F27DF99FA004908E7 /* ProductsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListView.swift; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 		F273D88B2805B598007E4BDE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1ADE5CDB2EB4F79D001B774D /* Bundle+URLScheme.swift */,
 				F29F79CB28BF64260097377A /* Bundle+Version.swift */,
 				F25E4EEF27D237B000BEFCF5 /* Date+Utilities.swift */,
 				F2018F7C27E0DE0C004908E7 /* Double+Currency.swift */,
@@ -974,6 +977,7 @@
 				F24AA6ED27EDD91A00F981DF /* LottieView.swift in Sources */,
 				F2018F8127E0EDF9004908E7 /* CartItemView.swift in Sources */,
 				F29B873A27C4F56A00460D85 /* AsyncImageCompat.swift in Sources */,
+				1ADE5CDC2EB4F7AB001B774D /* Bundle+URLScheme.swift in Sources */,
 				F2479BAD27FF354600C1F8BE /* BeaconRow.swift in Sources */,
 				F284C0C627CF850000E6986B /* SettingsViewModel.swift in Sources */,
 				F2A3F39D28118FE1004837C9 /* View+Theme.swift in Sources */,
