@@ -8,10 +8,14 @@
 import Foundation
 
 internal extension Bundle {
-    func validateScheme(scheme: String) -> Bool {
-        let urlSchemes = Bundle.main.object(forInfoDictionaryKey: "CFBundleURLTypes") as? [[String: Any]]
-        let schemes = urlSchemes?.first?["CFBundleURLSchemes"] as? [String]
+    func hasValidScheme(_ scheme: String) -> Bool {
+        guard
+            let urlTypes = object(forInfoDictionaryKey: "CFBundleURLTypes") as? [[String: Any]],
+            let schemes = urlTypes.first?["CFBundleURLSchemes"] as? [String]
+        else {
+            return false
+        }
 
-        return schemes?.contains(scheme) ?? false
+        return schemes.contains(scheme)
     }
 }
