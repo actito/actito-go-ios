@@ -87,7 +87,7 @@ struct ActitoGoApp: App {
     }
     
     private func handleDeepLink(_ url: URL) {
-        guard let scheme = url.scheme, Bundle.main.validateScheme(scheme: scheme) else { return }
+        guard let scheme = url.scheme, Bundle.main.hasValidScheme(scheme) else { return }
 
         guard url.pathComponents.count >= 2 else { return }
         
