@@ -20,6 +20,7 @@
 		1ADE5CDA2EB37CBB001B774D /* ActitoPushUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD92EB37CBB001B774D /* ActitoPushUIKit */; };
 		1ADE5CDC2EB4F7AB001B774D /* Bundle+URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE5CDB2EB4F79D001B774D /* Bundle+URLScheme.swift */; };
 		E58FAEBE2EBB3A1500A29907 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1A42BFAC2EAA7D7500172959 /* AppIcon.icon */; };
+		E595F2DE2EBB4F1F005D4DE6 /* ActitoNotificationServiceExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = E595F2DD2EBB4F1F005D4DE6 /* ActitoNotificationServiceExtensionKit */; };
 		E5A3442A2AE012E8002EE51B /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = E5A344292AE012E8002EE51B /* SwiftUIIntrospect */; };
 		F2018F6B27DB6D8D004908E7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2018F6A27DB6D8D004908E7 /* Product.swift */; };
 		F2018F6D27DF935F004908E7 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2018F6C27DF935F004908E7 /* ProductDetailsViewModel.swift */; };
@@ -272,6 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E595F2DE2EBB4F1F005D4DE6 /* ActitoNotificationServiceExtensionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +738,7 @@
 			);
 			name = NotificationService;
 			packageProductDependencies = (
+				E595F2DD2EBB4F1F005D4DE6 /* ActitoNotificationServiceExtensionKit */,
 			);
 			productName = NotificationService;
 			productReference = F2716A792806FE60000CC7A5 /* NotificationService.appex */;
@@ -1514,6 +1517,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
 			productName = ActitoPushUIKit;
+		};
+		E595F2DD2EBB4F1F005D4DE6 /* ActitoNotificationServiceExtensionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ADE5CC82EB37BCE001B774D /* XCRemoteSwiftPackageReference "actito-sdk-ios" */;
+			productName = ActitoNotificationServiceExtensionKit;
 		};
 		E5A344292AE012E8002EE51B /* SwiftUIIntrospect */ = {
 			isa = XCSwiftPackageProductDependency;
