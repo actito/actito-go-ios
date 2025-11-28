@@ -61,6 +61,9 @@
 "home_nearby_alert_permissions_title" = "Missing permissions";
 "home_nearby_alert_permissions_message" = "In order to show your nearby beacons we need access to your precise location.";
 "home_nearby_alert_permissions_button" = "Request access";
+"home_nearby_alert_updates_disabled_title" = "Location updates disabled";
+"home_nearby_alert_updates_disabled_message" = "In order to show your nearby beacons location updates must be enabled.";
+"home_nearby_alert_updates_disabled_button" = "Go to settings";
 "home_events_title" = "Log custom events";
 "home_events_message" = "Log events manually by setting up its name and attributes. Use your custom event to create event-based automations.";
 "home_events_button" = "Try it!";

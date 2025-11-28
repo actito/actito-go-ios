@@ -22,7 +22,8 @@ class HomeViewModel: ObservableObject {
     
     @Published private(set) var highlightedProducts = [Product]()
     @Published private(set) var rangedBeacons = [ActitoBeacon]()
-    @Published private(set) var hasLocationPermissions = false
+    @Published private(set) var hasGeofencingPermissions = false
+    @Published private(set) var hasLocationUpdatesEnabled = false
     @Published var showingSettingsPermissionDialog = false
     @Published private(set) var coffeeBrewerLiveActivityState: CoffeeBrewerActivityAttributes.BrewingState?
     
@@ -80,14 +81,14 @@ class HomeViewModel: ObservableObject {
     }
     
     private func checkLocationPermissions() {
-        hasLocationPermissions = locationController.hasGeofencingCapabilities
+        hasGeofencingPermissions = locationController.hasGeofencingCapabilities
 
         locationController.onLocationCapabilitiesChanged
             .receive(on: DispatchQueue.main)
             .sink { [weak self] in
                 guard let self = self else { return }
                 
-                self.hasLocationPermissions = self.locationController.hasGeofencingCapabilities
+                self.hasGeofencingPermissions = locationController.hasGeofencingCapabilities
             }
             .store(in: &cancellables)
     }
@@ -149,5 +150,10 @@ class HomeViewModel: ObservableObject {
             // Prevent automatic upgrades afterwards.
             locationController.requestAlwaysAuthorization = true
         }
+    }
+
+    func checkLocationStatus() {
+        hasGeofencingPermissions = locationController.hasGeofencingCapabilities
+        hasLocationUpdatesEnabled = Actito.shared.geo().hasLocationServicesEnabled
     }
 }
