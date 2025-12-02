@@ -63,14 +63,18 @@ struct ActitoGoApp: App {
         }
         
         Task {
+            let environment = determineEnvironment(for: url)
+            let client = APIClient(baseUrl: environment.baseUrl)
+
             do {
-                let response = try await APIClient.getConfiguration(code: code)
-                
+                let response = try await client.getConfiguration(code: code)
+
                 // Persist the configuration.
                 Preferences.standard.appConfiguration = AppConfiguration(
                     applicationKey: response.demo.applicationKey,
                     applicationSecret: response.demo.applicationSecret,
-                    loyaltyProgramId: response.demo.loyaltyProgram
+                    loyaltyProgramId: response.demo.loyaltyProgram,
+                    environment: environment
                 )
                 
                 ContentRouter.main.route = .splash

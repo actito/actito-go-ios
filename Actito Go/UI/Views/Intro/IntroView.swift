@@ -161,9 +161,11 @@ struct IntroView: View {
                     let user = Auth.auth().currentUser!
                     try await Actito.shared.device().updateUser(userId: user.uid, userName: user.displayName)
 
-                    if let programId = Preferences.standard.appConfiguration?.loyaltyProgramId {
+                    if let configuration = Preferences.standard.appConfiguration, let programId = configuration.loyaltyProgramId {
                         Logger.main.info("Creating loyalty program enrollment.")
-                        let response = try await APIClient.createEnrollment(
+
+                        let client = APIClient(baseUrl: configuration.environment.baseUrl)
+                        let response = try await client.createEnrollment(
                             programId: programId,
                             payload: APIClient.CreateEnrollmentPayload(
                                 userId: user.uid,

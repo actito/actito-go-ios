@@ -36,12 +36,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         Actito.shared.geo().delegate = self
 
         if let configuration = Preferences.standard.appConfiguration {
-            Actito.shared.configure(
-                servicesInfo: ActitoServicesInfo(
-                    applicationKey: configuration.applicationKey,
-                    applicationSecret: configuration.applicationSecret
-                )
-            )
+            configure(with: configuration)
         }
 
         if #available(iOS 16.1, *) {
