@@ -38,6 +38,13 @@ final class Preferences {
     
     @UserDefault("membership_card_url")
     var membershipCardUrl: String? = nil
+
+    func resetPreferences() {
+        userDefaults.removeObject(forKey: "intro_finished")
+        userDefaults.removeObject(forKey: "store_enabled")
+        userDefaults.removeObject(forKey: "cart")
+        userDefaults.removeObject(forKey: "membership_card_url")
+    }
 }
 
 @propertyWrapper
