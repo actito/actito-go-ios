@@ -187,7 +187,14 @@ struct SettingsView: View {
                             .font(.headline)
                             .foregroundColor(Color(UIColor.secondaryLabel))
                             .multilineTextAlignment(.center)
-                        
+
+                        if Preferences.standard.appConfiguration?.environment == .test {
+                            Text(String(localized: "settings_app_test_environment_label"))
+                                .font(.caption)
+                                .foregroundColor(Color(UIColor.secondaryLabel))
+                                .multilineTextAlignment(.center)
+                        }
+
                         if #available(iOS 15.0, *) {
                             Text(verbatim: application.id)
                                 .font(.caption)
