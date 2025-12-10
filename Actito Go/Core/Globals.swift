@@ -9,13 +9,18 @@ import Foundation
 import ActitoKit
 import OSLog
 
+private let allowedConfigurationHostnames = [
+    "go-demo.ntc.re",
+    "go-demo-test.test.ntc.re",
+]
+
 func extractCodeParameter(from url: URL) -> String? {
     guard url.scheme == "https" else {
         Logger.main.debug("Scheme mismatch.")
         return nil
     }
     
-    guard url.host == "go-demo.ntc.re" || url.host == "go-demo-dev.ntc.re" else {
+    guard let host = url.host, allowedConfigurationHostnames.contains(host) else {
         Logger.main.debug("Host mismatch.")
         return nil
     }
@@ -29,6 +34,14 @@ func extractCodeParameter(from url: URL) -> String? {
     }
     
     return referrer
+}
+
+func determineEnvironment(for url: URL) -> AppConfiguration.Environment {
+    if url.host?.hasSuffix(".test.ntc.re") == true {
+        return .test
+    }
+
+    return .production
 }
 
 func loadRemoteConfig() async {
@@ -50,4 +63,29 @@ func loadRemoteConfig() async {
     }
     
     Preferences.standard.storeEnabled = false
+}
+
+@MainActor
+func configure(with configuration: AppConfiguration) {
+    let servicesInfo: ActitoServicesInfo
+
+    switch configuration.environment {
+    case .production:
+        servicesInfo = ActitoServicesInfo(
+            applicationKey: configuration.applicationKey,
+            applicationSecret: configuration.applicationSecret
+        )
+    case .test:
+        servicesInfo = ActitoServicesInfo(
+            applicationKey: configuration.applicationKey,
+            applicationSecret: configuration.applicationSecret,
+            hosts: ActitoServicesInfo.Hosts(
+                restApi: "https://push-test.notifica.re",
+                appLinks: "applinks.test.notifica.re",
+                shortLinks: "test.ntc.re"
+            )
+        )
+    }
+
+    Actito.shared.configure(servicesInfo: servicesInfo)
 }

@@ -8,10 +8,10 @@
 import Foundation
 import Alamofire
 
-enum APIClient {
-    private static let baseUrl = URL(string: "https://push.notifica.re")!
-    
-    static func getConfiguration(code: String) async throws -> GetConfigurationResponse {
+struct APIClient {
+    let baseUrl: URL
+
+    func getConfiguration(code: String) async throws -> GetConfigurationResponse {
         let url = baseUrl
             .appendingPathComponent("download")
             .appendingPathComponent("demo")
@@ -24,7 +24,7 @@ enum APIClient {
             .value
     }
     
-    static func createEnrollment(programId: String, payload: CreateEnrollmentPayload) async throws -> CreateEnrollmentResponse {
+    func createEnrollment(programId: String, payload: CreateEnrollmentPayload) async throws -> CreateEnrollmentResponse {
         let url = baseUrl
             .appendingPathComponent("loyalty")
             .appendingPathComponent("profile")
