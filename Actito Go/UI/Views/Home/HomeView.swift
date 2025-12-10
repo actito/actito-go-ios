@@ -34,7 +34,7 @@ struct HomeView: View {
                 }
 
                 Group {
-                    if viewModel.hasLocationPermissions {
+                    if viewModel.hasGeofencingPermissions && viewModel.hasLocationUpdatesEnabled {
                         GroupBox {
                             VStack(alignment: .leading, spacing: 8) {
                                 if #available(iOS 15.0, *) {
@@ -68,15 +68,26 @@ struct HomeView: View {
                                 }
                             }
                         }
-                    } else {
+                    } else if !viewModel.hasGeofencingPermissions {
                         AlertBlock(title: String(localized: "home_nearby_alert_permissions_title"), systemImage: "exclamationmark.triangle") {
                             Text(String(localized: "home_nearby_alert_permissions_message"))
                                 .fixedSize(horizontal: false, vertical: true)
                             
                             Button {
-                                viewModel.enableLocationUpdates()
+                                viewModel.showingSettingsPermissionDialog = true
                             } label: {
                                 Text(String(localized: "home_nearby_alert_permissions_button"))
+                            }
+                        }
+                    } else if !viewModel.hasLocationUpdatesEnabled {
+                        AlertBlock(title: String(localized: "home_nearby_alert_updates_disabled_title"), systemImage: "exclamationmark.triangle") {
+                            Text(String(localized: "home_nearby_alert_updates_disabled_message"))
+                                .fixedSize(horizontal: false, vertical: true)
+
+                            Button {
+                                appState.contentTab = .settings
+                            } label: {
+                                Text(String(localized: "home_nearby_alert_updates_disabled_button"))
                             }
                         }
                     }
@@ -154,6 +165,8 @@ struct HomeView: View {
             }
         )
         .onAppear {
+            viewModel.checkLocationStatus()
+
             Task {
                 do {
                     try await Actito.shared.events().logPageView(.home)
@@ -161,6 +174,9 @@ struct HomeView: View {
                     Logger.main.error("Failed to log a custom event. \(error.localizedDescription)")
                 }
             }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            viewModel.checkLocationStatus()
         }
     }
 }

@@ -29,12 +29,8 @@ class LocationController: NSObject, CLLocationManagerDelegate {
         return hasLocationUpdatesEnabled && hasLocationPermissions
     }
 
-    @MainActor
     var hasGeofencingCapabilities: Bool {
-        let hasLocationUpdatesEnabled = Actito.shared.geo().hasLocationServicesEnabled
-        let hasAlwaysPermission = locationManager.authorizationStatus == .authorizedAlways
-        
-        return hasLocationUpdatesEnabled && hasAlwaysPermission
+        return locationManager.authorizationStatus == .authorizedAlways
     }
     
     init(requestAlwaysAuthorization: Bool = true) {
