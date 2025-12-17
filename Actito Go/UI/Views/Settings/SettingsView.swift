@@ -242,6 +242,33 @@ struct SettingsView: View {
                 .padding()
             }
         }
+        .alert(
+            String(localized: "settings_notifications_denied_alert_title"),
+            isPresented : $viewModel.showingNotificationsPermissionAlert,
+            actions: {
+                Button {
+                    viewModel.showingNotificationsPermissionAlert = false
+
+                } label: {
+                    Text(String(localized: "settings_notifications_denied_alert_cancel_button"))
+                }
+
+                Button {
+                    guard let url = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(url) else {
+                        viewModel.showingNotificationsPermissionAlert = false
+                        return
+                    }
+
+                    UIApplication.shared.open(url)
+                    viewModel.showingNotificationsPermissionAlert = false
+                } label: {
+                    Text(String(localized: "settings_notifications_denied_alert_confirm_button"))
+                }
+            },
+            message: {
+                Text(String(localized: "settings_notifications_denied_alert_message"))
+            }
+        )
         .onAppear {
             Task {
                 do {

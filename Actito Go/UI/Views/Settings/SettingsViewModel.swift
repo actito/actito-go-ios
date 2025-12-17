@@ -23,6 +23,7 @@ class SettingsViewModel: ObservableObject {
     @Published var doNotDisturbEnd: Date
     @Published var locationEnabled: Bool
     @Published var showingSettingsPermissionDialog = false
+    @Published var showingNotificationsPermissionAlert = false
     // Tags section
     @Published var announcementsTagEnabled = false
     @Published var marketingTagEnabled = false
@@ -72,6 +73,13 @@ class SettingsViewModel: ObservableObject {
             .sink { enabled in
                 Task {
                     if enabled {
+                        let settings = await UNUserNotificationCenter.current().notificationSettings()
+                        guard settings.authorizationStatus == .authorized else {
+                            self.showingNotificationsPermissionAlert = true
+                            self.notificationsEnabled = false
+                            return
+                        }
+                        
                         do {
                             _ = try await Actito.shared.push().enableRemoteNotifications()
                         } catch {
