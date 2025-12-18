@@ -157,13 +157,6 @@ struct HomeView: View {
                 .padding()
             }
         }
-        .overlay(
-            NavigationLink(isActive: $appState.showEvents) {
-                EventsView()
-            } label: {
-                EmptyView()
-            }
-        )
         .onAppear {
             viewModel.checkLocationStatus()
 
