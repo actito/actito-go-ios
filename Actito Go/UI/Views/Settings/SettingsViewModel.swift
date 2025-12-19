@@ -74,7 +74,7 @@ class SettingsViewModel: ObservableObject {
                 Task {
                     if enabled {
                         let settings = await UNUserNotificationCenter.current().notificationSettings()
-                        guard settings.authorizationStatus == .authorized else {
+                        guard settings.authorizationStatus != .denied else {
                             self.showingNotificationsPermissionAlert = true
                             self.notificationsEnabled = false
                             return
