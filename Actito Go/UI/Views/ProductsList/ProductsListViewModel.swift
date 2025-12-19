@@ -23,7 +23,7 @@ class ProductsListViewModel: ObservableObject {
                 let assets = try await Actito.shared.assets().fetch(group: "products")
                 self.products = assets.compactMap { (asset) -> Product? in
                     guard let id = asset.extra["id"] as? String,
-                          let description = asset.description,
+                          let description = asset.description?.stripHtml(),
                           // let price = asset.extra["price"] as? Double,
                           let imageUrl = asset.url,
                           let highlighted = asset.extra["highlighted"] as? Bool
