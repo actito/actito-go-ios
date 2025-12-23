@@ -10,8 +10,8 @@ import ActitoKit
 import ActitoGeoKit
 import ActitoInboxKit
 
-extension ActitoEventsModule {
-    
+extension ActitoEventsComponent {
+
     func logIntroFinished() async throws {
         try await logCustom("intro_finished")
     }
