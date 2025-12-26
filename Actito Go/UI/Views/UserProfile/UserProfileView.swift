@@ -154,9 +154,13 @@ struct UserProfileView: View {
             do {
                 try await viewModel.deleteAccount()
 
+                Preferences.standard.resetPreferences()
+
                 withAnimation {
-                    ContentRouter.main.route = .intro
+                    ContentRouter.main.route = .splash
                 }
+
+                appState.contentTab = .home
             } catch {
                 guard let authErrorCode = AuthErrorCode(rawValue: (error as NSError).code),
                       authErrorCode == AuthErrorCode.requiresRecentLogin
@@ -170,9 +174,13 @@ struct UserProfileView: View {
                     try await viewModel.reauthenticate()
                     try await viewModel.deleteAccount()
 
+                    Preferences.standard.resetPreferences()
+
                     withAnimation {
-                        ContentRouter.main.route = .intro
+                        ContentRouter.main.route = .splash
                     }
+
+                    appState.contentTab = .home
                 } catch {
                     Logger.main.error("Reauthenticate and delete account failed. \(error.localizedDescription)")
                 }

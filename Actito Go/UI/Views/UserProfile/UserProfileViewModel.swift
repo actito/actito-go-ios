@@ -49,7 +49,7 @@ class UserProfileViewModel: ObservableObject {
         try await Auth.auth().currentUser!.delete()
         
         // Register the device as anonymous.
-        try await Actito.shared.device().updateUser(userId: nil, userName: nil)
+        try await Actito.shared.unlaunch()
     }
     
     func reauthenticate() async throws {

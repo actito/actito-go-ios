@@ -187,7 +187,14 @@ struct SettingsView: View {
                             .font(.headline)
                             .foregroundColor(Color(UIColor.secondaryLabel))
                             .multilineTextAlignment(.center)
-                        
+
+                        if Preferences.standard.appConfiguration?.environment == .test {
+                            Text(String(localized: "settings_app_test_environment_label"))
+                                .font(.caption)
+                                .foregroundColor(Color(UIColor.secondaryLabel))
+                                .multilineTextAlignment(.center)
+                        }
+
                         if #available(iOS 15.0, *) {
                             Text(verbatim: application.id)
                                 .font(.caption)
@@ -235,6 +242,33 @@ struct SettingsView: View {
                 .padding()
             }
         }
+        .alert(
+            String(localized: "settings_notifications_denied_alert_title"),
+            isPresented : $viewModel.showingNotificationsPermissionAlert,
+            actions: {
+                Button {
+                    viewModel.showingNotificationsPermissionAlert = false
+
+                } label: {
+                    Text(String(localized: "settings_notifications_denied_alert_cancel_button"))
+                }
+
+                Button {
+                    guard let url = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(url) else {
+                        viewModel.showingNotificationsPermissionAlert = false
+                        return
+                    }
+
+                    UIApplication.shared.open(url)
+                    viewModel.showingNotificationsPermissionAlert = false
+                } label: {
+                    Text(String(localized: "settings_notifications_denied_alert_confirm_button"))
+                }
+            },
+            message: {
+                Text(String(localized: "settings_notifications_denied_alert_message"))
+            }
+        )
         .onAppear {
             Task {
                 do {

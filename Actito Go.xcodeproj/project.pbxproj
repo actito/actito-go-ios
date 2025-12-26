@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A42BFAE2EAA814D00172959 /* AppIconDev.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1A42BFAD2EAA814D00172959 /* AppIconDev.icon */; };
 		1A42BFB02EAA853B00172959 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BFAF2EAA853B00172959 /* FirebaseAnalyticsCore */; };
+		1A912AB52EE86DA400B3B184 /* String+Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A912AB42EE86D9A00B3B184 /* String+Html.swift */; };
 		1ADE5CCA2EB37CBB001B774D /* ActitoAssetsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CC92EB37CBB001B774D /* ActitoAssetsKit */; };
 		1ADE5CCC2EB37CBB001B774D /* ActitoGeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CCB2EB37CBB001B774D /* ActitoGeoKit */; };
 		1ADE5CCE2EB37CBB001B774D /* ActitoInAppMessagingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CCD2EB37CBB001B774D /* ActitoInAppMessagingKit */; };
@@ -163,6 +164,7 @@
 		1A42BFA82EAA7C0300172959 /* Actito Go Icon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "Actito Go Icon.icon"; sourceTree = "<group>"; };
 		1A42BFAC2EAA7D7500172959 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		1A42BFAD2EAA814D00172959 /* AppIconDev.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIconDev.icon; sourceTree = "<group>"; };
+		1A912AB42EE86D9A00B3B184 /* String+Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Html.swift"; sourceTree = "<group>"; };
 		1ADE5CDB2EB4F79D001B774D /* Bundle+URLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+URLScheme.swift"; sourceTree = "<group>"; };
 		F2018F6A27DB6D8D004908E7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F2018F6C27DF935F004908E7 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -471,6 +473,7 @@
 				F2018F7C27E0DE0C004908E7 /* Double+Currency.swift */,
 				F25E4EF127D237CC00BEFCF5 /* Actito+Utilities.swift */,
 				F25E4EF427D2394700BEFCF5 /* Notification.Name+Custom.swift */,
+				1A912AB42EE86D9A00B3B184 /* String+Html.swift */,
 				F29B874027C4FC4200460D85 /* String+Localization.swift */,
 				F29B082227D64CB000EE90CC /* UIApplication+Notifications.swift */,
 				F2A3F39C28118FE1004837C9 /* View+Theme.swift */,
@@ -977,6 +980,7 @@
 				F24D0D8727FC4D4F00E4232A /* APIClient.swift in Sources */,
 				F20D5A4C294B888400B33CAD /* LiveActivitiesImageDownloader.swift in Sources */,
 				F29B873C27C4F59000460D85 /* AsyncImageCompat+ImageLoader.swift in Sources */,
+				1A912AB52EE86DA400B3B184 /* String+Html.swift in Sources */,
 				F245855E27C40B8600AA93A2 /* TopProductsView.swift in Sources */,
 				F2479BA427FC9ED900C1F8BE /* APIClient+Responses.swift in Sources */,
 				F24AA6ED27EDD91A00F981DF /* LottieView.swift in Sources */,
@@ -1053,7 +1057,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
@@ -1064,7 +1068,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "re.notifica.go$(APP_BUNDLE_IDENTIFIER_SUFFIX).NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1078,7 +1082,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
@@ -1089,7 +1093,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "re.notifica.go$(APP_BUNDLE_IDENTIFIER_SUFFIX).NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1107,7 +1111,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = WidgetExtension/WidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
@@ -1119,7 +1123,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = re.notifica.go.dev.WidgetExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1137,7 +1141,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = WidgetExtension/WidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
@@ -1148,7 +1152,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = re.notifica.go.WidgetExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1291,7 +1295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Actito Go/Actito Go-Debug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_ASSET_PATHS = "\"Actito Go/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1316,7 +1320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.notifica.go$(APP_BUNDLE_IDENTIFIER_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1336,7 +1340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Actito Go/Actito Go.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_ASSET_PATHS = "\"Actito Go/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1361,7 +1365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.notifica.go$(APP_BUNDLE_IDENTIFIER_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1421,7 +1425,7 @@
 			repositoryURL = "https://github.com/actito/actito-sdk-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = "5.0.0-beta.1";
+				version = "5.0.0-beta.2";
 			};
 		};
 		E5A344282AE012E8002EE51B /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {

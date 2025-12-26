@@ -36,12 +36,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         Actito.shared.geo().delegate = self
 
         if let configuration = Preferences.standard.appConfiguration {
-            Actito.shared.configure(
-                servicesInfo: ActitoServicesInfo(
-                    applicationKey: configuration.applicationKey,
-                    applicationSecret: configuration.applicationSecret
-                )
-            )
+            configure(with: configuration)
+
+            if let device = Actito.shared.device().currentDevice {
+                Crashlytics.crashlytics().setUserID("device_\(device.id)")
+            }
         }
 
         if #available(iOS 16.1, *) {
@@ -72,6 +71,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 extension AppDelegate: ActitoDelegate {
     func actito(_ actito: Actito, onReady application: ActitoApplication) {
         NotificationCenter.default.post(name: .actitoLaunched, object: nil)
+    }
+
+    func actito(_ actito: ActitoKit.Actito, didRegisterDevice device: ActitoKit.ActitoDevice) {
+        Crashlytics.crashlytics().setUserID("device_\(device.id)")
     }
 }
 

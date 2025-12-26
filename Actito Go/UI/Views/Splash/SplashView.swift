@@ -61,13 +61,7 @@ struct SplashView: View {
                 // Show the spinner only when returning from the scanner.
                 // Actito will be configured during app launch otherwise.
                 isShowingProgress = true
-                
-                Actito.shared.configure(
-                    servicesInfo: ActitoServicesInfo(
-                        applicationKey: appConfiguration.applicationKey,
-                        applicationSecret: appConfiguration.applicationSecret
-                    )
-                )
+                configure(with: appConfiguration)
             }
 
             Task {
