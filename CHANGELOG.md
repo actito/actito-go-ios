@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.1.0
+
+- Add UI flow to enable beacon scanning when location capabilities are missing
+- Improve navigation
+- Permanently remove all data when deleting account
+- Update dependencies
+
 ## 2.0.0
 
 - Migrate to Actito SDK 5.0.0-beta.1
