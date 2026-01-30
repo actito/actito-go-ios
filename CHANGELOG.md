@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Upcoming release
+
+- Update Actito to 5.0.0
+- Update dependencies
+
 ## 2.1.0
 
 - Add UI flow to enable beacon scanning when location capabilities are missing
