@@ -1424,8 +1424,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/actito/actito-sdk-ios.git";
 			requirement = {
-				kind = exactVersion;
-				version = "5.0.0-beta.2";
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 		E5A344282AE012E8002EE51B /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
