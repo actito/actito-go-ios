@@ -22,13 +22,13 @@
               "value" : false
             }
           ],
-          "image-name" : "ic_foreground_dev.svg",
-          "name" : "ic_foreground_dev",
+          "image-name" : "ios-dev.svg",
+          "name" : "ios-dev",
           "position-specializations" : [
             {
               "idiom" : "square",
               "value" : {
-                "scale" : 14.5,
+                "scale" : 8.53,
                 "translation-in-points" : [
                   0,
                   0
@@ -45,7 +45,7 @@
             {
               "idiom" : "square",
               "value" : {
-                "scale" : 14.5,
+                "scale" : 9.48,
                 "translation-in-points" : [
                   0,
                   0
@@ -66,10 +66,6 @@
         {
           "appearance" : "dark",
           "value" : false
-        },
-        {
-          "appearance" : "tinted",
-          "value" : false
         }
       ],
       "translucency-specializations" : [
@@ -81,13 +77,6 @@
         },
         {
           "appearance" : "dark",
-          "value" : {
-            "enabled" : false,
-            "value" : 0.5
-          }
-        },
-        {
-          "appearance" : "tinted",
           "value" : {
             "enabled" : false,
             "value" : 0.5

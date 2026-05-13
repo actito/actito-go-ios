@@ -11,9 +11,6 @@
         {
           "glass-specializations" : [
             {
-              "value" : false
-            },
-            {
               "appearance" : "dark",
               "value" : false
             },
@@ -22,13 +19,13 @@
               "value" : false
             }
           ],
-          "image-name" : "ic_foreground.svg",
-          "name" : "ic_foreground",
+          "image-name" : "iOS – App Icon - no bg (2).svg",
+          "name" : "iOS – App Icon - no bg (2)",
           "position-specializations" : [
             {
               "idiom" : "square",
               "value" : {
-                "scale" : 14.5,
+                "scale" : 8.53,
                 "translation-in-points" : [
                   0,
                   0
@@ -45,7 +42,7 @@
             {
               "idiom" : "square",
               "value" : {
-                "scale" : 14.5,
+                "scale" : 9.48,
                 "translation-in-points" : [
                   0,
                   0
@@ -59,34 +56,11 @@
         "kind" : "neutral",
         "opacity" : 0.5
       },
-      "specular-specializations" : [
-        {
-          "value" : false
-        },
-        {
-          "appearance" : "dark",
-          "value" : false
-        },
-        {
-          "appearance" : "tinted",
-          "value" : false
-        }
-      ],
-      "translucency-specializations" : [
-        {
-          "value" : {
-            "enabled" : false,
-            "value" : 0.5
-          }
-        },
-        {
-          "appearance" : "dark",
-          "value" : {
-            "enabled" : false,
-            "value" : 0.5
-          }
-        }
-      ]
+      "specular" : false,
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0.5
+      }
     }
   ],
   "supported-platforms" : {
