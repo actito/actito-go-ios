@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Actito_Logo2025_POS-qntm.png",
+      "filename" : "Logo _By Ibexa-color-Actito.svg",
       "idiom" : "universal"
     },
     {
@@ -11,6 +11,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "Logo _By Ibexa-color-Actito-white text.svg",
       "idiom" : "universal"
     }
   ],
