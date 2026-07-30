@@ -9,25 +9,56 @@
     {
       "layers" : [
         {
+          "glass-specializations" : [
+            {
+              "appearance" : "dark",
+              "value" : false
+            },
+            {
+              "appearance" : "tinted",
+              "value" : false
+            }
+          ],
+          "image-name" : "iOS – App Icon - no bg (2).svg",
+          "name" : "iOS – App Icon - no bg (2)",
+          "position-specializations" : [
+            {
+              "idiom" : "square",
+              "value" : {
+                "scale" : 8.53,
+                "translation-in-points" : [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
+        },
+        {
           "glass" : false,
-          "hidden" : false,
-          "image-name" : "ic_foreground.svg",
-          "name" : "ic_foreground",
-          "position" : {
-            "scale" : 14.5,
-            "translation-in-points" : [
-              0,
-              0
-            ]
-          }
+          "image-name" : "ic_background.svg",
+          "name" : "ic_background",
+          "position-specializations" : [
+            {
+              "idiom" : "square",
+              "value" : {
+                "scale" : 9.48,
+                "translation-in-points" : [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
         }
       ],
       "shadow" : {
         "kind" : "neutral",
         "opacity" : 0.5
       },
+      "specular" : false,
       "translucency" : {
-        "enabled" : true,
+        "enabled" : false,
         "value" : 0.5
       }
     }
