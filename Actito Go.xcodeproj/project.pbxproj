@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A42BFAE2EAA814D00172959 /* AppIconDev.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1A42BFAD2EAA814D00172959 /* AppIconDev.icon */; };
 		1A42BFB02EAA853B00172959 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A42BFAF2EAA853B00172959 /* FirebaseAnalyticsCore */; };
 		1A912AB52EE86DA400B3B184 /* String+Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A912AB42EE86D9A00B3B184 /* String+Html.swift */; };
+		1ABDDE6C2FB4C411008A6505 /* AppIconDev.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1ABDDE6B2FB4C410008A6505 /* AppIconDev.icon */; };
+		1ABDDE6E2FB4C4F5008A6505 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1ABDDE6D2FB4C42E008A6505 /* AppIcon.icon */; };
 		1ADE5CCA2EB37CBB001B774D /* ActitoAssetsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CC92EB37CBB001B774D /* ActitoAssetsKit */; };
 		1ADE5CCC2EB37CBB001B774D /* ActitoGeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CCB2EB37CBB001B774D /* ActitoGeoKit */; };
 		1ADE5CCE2EB37CBB001B774D /* ActitoInAppMessagingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CCD2EB37CBB001B774D /* ActitoInAppMessagingKit */; };
@@ -20,7 +21,6 @@
 		1ADE5CD82EB37CBB001B774D /* ActitoPushKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD72EB37CBB001B774D /* ActitoPushKit */; };
 		1ADE5CDA2EB37CBB001B774D /* ActitoPushUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ADE5CD92EB37CBB001B774D /* ActitoPushUIKit */; };
 		1ADE5CDC2EB4F7AB001B774D /* Bundle+URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE5CDB2EB4F79D001B774D /* Bundle+URLScheme.swift */; };
-		E58FAEBE2EBB3A1500A29907 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1A42BFAC2EAA7D7500172959 /* AppIcon.icon */; };
 		E595F2DE2EBB4F1F005D4DE6 /* ActitoNotificationServiceExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = E595F2DD2EBB4F1F005D4DE6 /* ActitoNotificationServiceExtensionKit */; };
 		E5A3442A2AE012E8002EE51B /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = E5A344292AE012E8002EE51B /* SwiftUIIntrospect */; };
 		F2018F6B27DB6D8D004908E7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2018F6A27DB6D8D004908E7 /* Product.swift */; };
@@ -162,9 +162,9 @@
 
 /* Begin PBXFileReference section */
 		1A42BFA82EAA7C0300172959 /* Actito Go Icon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "Actito Go Icon.icon"; sourceTree = "<group>"; };
-		1A42BFAC2EAA7D7500172959 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
-		1A42BFAD2EAA814D00172959 /* AppIconDev.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIconDev.icon; sourceTree = "<group>"; };
 		1A912AB42EE86D9A00B3B184 /* String+Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Html.swift"; sourceTree = "<group>"; };
+		1ABDDE6B2FB4C410008A6505 /* AppIconDev.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIconDev.icon; sourceTree = "<group>"; };
+		1ABDDE6D2FB4C42E008A6505 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		1ADE5CDB2EB4F79D001B774D /* Bundle+URLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+URLScheme.swift"; sourceTree = "<group>"; };
 		F2018F6A27DB6D8D004908E7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F2018F6C27DF935F004908E7 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -625,8 +625,8 @@
 		F2B984D32851097F005CD6D6 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				1ABDDE6B2FB4C410008A6505 /* AppIconDev.icon */,
 				F2B984DB28512CB9005CD6D6 /* GoogleService-Info.plist */,
-				1A42BFAD2EAA814D00172959 /* AppIconDev.icon */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -634,8 +634,8 @@
 		F2B984D428510984005CD6D6 /* Release */ = {
 			isa = PBXGroup;
 			children = (
+				1ABDDE6D2FB4C42E008A6505 /* AppIcon.icon */,
 				F2B984DD28512CD0005CD6D6 /* GoogleService-Info.plist */,
-				1A42BFAC2EAA7D7500172959 /* AppIcon.icon */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -880,8 +880,8 @@
 				F2F0010727BFE83E00753D89 /* Assets.xcassets in Resources */,
 				F284C0BF27CF781400E6986B /* ActitoOptions.plist in Resources */,
 				F24AA6F027EDDBB000F981DF /* animation-qr-code-scanner.json in Resources */,
-				E58FAEBE2EBB3A1500A29907 /* AppIcon.icon in Resources */,
-				1A42BFAE2EAA814D00172959 /* AppIconDev.icon in Resources */,
+				1ABDDE6E2FB4C4F5008A6505 /* AppIcon.icon in Resources */,
+				1ABDDE6C2FB4C411008A6505 /* AppIconDev.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
