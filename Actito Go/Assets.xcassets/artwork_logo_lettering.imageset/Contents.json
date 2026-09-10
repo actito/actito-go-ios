@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Logo _By Ibexa-color-Actito.svg",
+      "filename" : "logo_actito_by_ibexa.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Logo _By Ibexa-color-Actito-white text.svg",
+      "filename" : "logo_actito_by_ibexa_white.svg",
       "idiom" : "universal"
     }
   ],
